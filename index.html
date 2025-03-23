@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <main class="main">
+      <section>
+        <div class="todo_list">
+          <h2 class="main_hade">TO Do List</h2>
+          <div class="cenge_mood" onclick="moodChendg()">Click me</div>
+          <div class="cenge_mood2" id="cenge_mood2" onclick="moodChendgIMG()">
+            <img src="img/bedtime_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" id="img1" alt="" onclick="moodChendg()">
+            <img src="img/light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" id="img2" alt="" onclick="moodChendg()">
+          </div>
+        </div>
+        <div class="main_input">
+            <div>
+                <input type="text" placeholder="Add your text" class="input" name="" id="input_box"/>
+            </div>
+            <div class="btn">
+                <button type="submit" class="btn_button" id="btn" onclick="addTask()">ADD</button>
+            </div>
+        </div>
+        <div class="main_list_item">
+          <ul id="container">
+            <!-- <li class="checked">tast 2</li>
+            <li>tast 3</li>
+            <li>tast 4</li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
